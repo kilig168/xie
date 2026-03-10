@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A single HTML notebook, perfect for minimalists."
+    />
+    <title>Xie</title>
+    <link rel="stylesheet" href="styles/neat.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
+  </head>
+  <body>
+    <header class="breathe">
+      <h1><a href="#archive">DYQ</a></h1>
+      <blockquote>
+        9KB极简单页HTML笔记本。
+        欢迎更新、编辑和分享！
+      </blockquote>
+
+      <ol>
+        <li>点击“新建”，撰写内容后点击“发布”即可完成笔记。</li>
+        <li>点击“保存”将其保存到系统中的index.html文件。</li>
+      </ol>
+
+      <p>
+        人生是各种不同的变故、循环不已的痛苦和欢乐组成的。那种永远不变的蓝天只存在于心灵中间，向现实的人生去要求未免是奢望。——巴尔扎克
+      </p>
+
+      <p>
+        <button id="save">Save</button>
+        <a href="#new" id="btnNew">New</a>
+      </p>
+    </header>
+
+    <main>
+      <section id="archive">
+        <ul></ul>
+      </section>
+    </main>
+
+    <section id="new">
+      <p>
+        <label for="title" class="row"
+          ><input id="title" type="text" placeholder="Title"
+        /></label>
+      </p>
+
+      <p>
+        <label for="story" class="row">
+          <textarea id="story" placeholder="Your story..."></textarea>
+        </label>
+      </p>
+
+      <button id="publish">Publish</button>
+    </section>
+
+    <aside popover id="toast"></aside>
+    <footer>
+      <p style="float: right">
+        ©2027 built with
+        <a href="https://github.com/kilig168/dyq">DYQ</a>
+        <time id="buildTime"></time>
+      </p>
+    </footer>
+
+    <script type="module" defer src="src/main.js"></script>
+  </body>
+</html>
